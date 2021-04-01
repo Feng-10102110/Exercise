@@ -8,7 +8,7 @@
     <title>grid</title>
     <style>
         body {
-            border:5px black solid;
+            background-color: rgb(210, 221, 241);
         }
         
         table {
@@ -17,14 +17,14 @@
             border-radius: 8px;
             width: 100%;
             font-family: cursive;
-            background-image: url(https://pbs.twimg.com/media/EVEt5rkU0AADJbk.jpg);
+            background-image: url(http://pic.616pic.com/bg_w1180/00/12/44/obI7v2O3pN.jpg!/fw/1120);
             background-repeat: no-repeat;
             background-attachment: initial;
             background-position: center;
             background-size: cover;
-            color: #daff06;
+            color: #000000;
             background-color: #080808;
-            text-shadow: 2px 2px 0 #fffdfd, 4px 4px 0 #9c9c9c;
+            text-shadow: 2px 2px 0 #a59f9f, 4px 4px 0 #9c9c9c;
         }
         
         th {
@@ -46,43 +46,31 @@
             font-size: 50px;
         }
         
-        a {
-            color: #000000;
-            background-color: #fbff00;
-            text-shadow: #d9ff00 0 4px 5px;
-        }
-        
-        .b {
-            color: rgb(14, 13, 13);
-            background-color: #ece9e9;
-            text-shadow: #474747 3px 5px 2px;
-        }
-        
-        #footer {
-            color: #fff;
-            background-color: #232323;
-            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18, 0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18
-        }
-        
         .container {
+            width: 100% height: 350px;
             display: grid;
-            grid-template-columns: 100px 1fr 1fr 100px 1fr 1fr;
-            grid-template-rows: repeat(auto-fill);
+            grid-template-rows: 50px 50px 50px 200px;
+            grid-template-columns: 50% 50%;
+            gap: 10px
+        }
+        .A{
+            font-size: 30px;
+            font-family: cursive;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div>
+        <div class=>
             <a href="https://fneg-10102110.github.io/Exercise/Lab/">
                 <<<回首頁</a>
         </div>
-<div>1</div>
-<div>2</div>
-<div>3</div>
-<div>4</div>
-<div>5</div>
+        <div></div>
+        <div class="A">課表比較頁面</div>
+        <div></div>
+        <div class="A">請左右比對選擇你心目中的好課表✧*｡٩(ˊᗜˋ*)و✧*｡</div>
+        <div></div>
         <div>
             <table>
                 <caption>幸福學生用課表</caption>
@@ -179,6 +167,106 @@
                         <td>戀愛</td>
                         <td>社會</td>
                         <td>漫畫</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <table>
+                <caption>不幸學生用課表</caption>
+                <thead>
+                    <tr>
+                        <th class="b">節次/星期</th>
+                        <th>星期一</th>
+                        <th>星期二</th>
+                        <th>星期三</th>
+                        <th>星期四</th>
+                        <th>星期五</th>
+                        <th>星期六</th>
+                        <th>星期日</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>第一節<br> 08:00~09:00
+                        </td>
+                        <td>人生</td>
+                        <td>英文</td>
+                        <td>數學</td>
+                        <td>體育</td>
+                        <td>英文</td>
+                        <td rowspan="4" align="center">課業<br>強化自習</td>
+                        <td rowspan="4" align="center">課業<br>強化自習</td>
+                    </tr>
+                    <tr>
+                        <td>第二節<br> 09:05~10:05
+                        </td>
+                        <td>人生</td>
+                        <td>結婚</td>
+                        <td>數學</td>
+                        <td>體育</td>
+                        <td>英文</td>
+                    </tr>
+                    <tr>
+                        <td>第三節<br> 10:10~11:15
+                        </td>
+                        <td>社會</td>
+                        <td>結婚</td>
+                        <td>人生</td>
+                        <td>學習</td>
+                        <td>遊戲</td>
+                    </tr>
+                    <tr>
+                        <td>第四節<br> 11:20~12:25
+                        </td>
+                        <td>社會</td>
+                        <td>結婚</td>
+                        <td>人生</td>
+                        <td>學習</td>
+                        <td>遊戲</td>
+                    </tr>
+
+                    <tr id="footer">
+                        <td colspan="8" align="center">好像有午休<br>12:25~13:30</td>
+
+                    </tr>
+                    <tr>
+                        <td>第五節<br> 08:00~09:00
+                        </td>
+                        <td>背書</td>
+                        <td>人生</td>
+                        <td>未來</td>
+                        <td>數學</td>
+                        <td>手遊</td>
+                        <td rowspan="4" align="center">無聊<br>睡一整天</td>
+                        <td rowspan="4" align="center">無聊<br>睡一整天</td>
+                    </tr>
+                    <tr>
+                        <td>第六節<br> 08:00~09:00
+                        </td>
+                        <td>背書</td>
+                        <td>人生</td>
+                        <td>未來</td>
+                        <td>數學</td>
+                        <td>手遊</td>
+                    </tr>
+                    <tr>
+                        <td>第七節<br> 08:00~09:00
+                        </td>
+                        <td>認真</td>
+                        <td>洗腦</td>
+                        <td>戀愛</td>
+                        <td>未來</td>
+                        <td>人生</td>
+                    </tr>
+                    <tr>
+                        <td>第八節<br> 08:00~09:00
+                        </td>
+                        <td>認真</td>
+                        <td>洗腦</td>
+                        <td>戀愛</td>
+                        <td>未來</td>
+                        <td>人生</td>
                     </tr>
                 </tbody>
             </table>
