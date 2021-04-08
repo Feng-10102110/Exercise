@@ -1,93 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant-TW">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .container {
-            display: grid;
-            width: 100%;
-            height: 350px;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 1px;
+    <title>Exercise 10</title>
+    <style type="text/css">
+        body {
+            min-height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         
-        .container>div {
-            border: 1px black solid;
+        table {
+            border-collapse: collapse;
+            background-image: url(https://i.imgur.com/OSR7RNT.gif),url(https://i.imgur.com/ulrYqt9.jpg);
+            background-size: 100px 100px,200px 200px;
+            background-position: center bottom;
+            background-repeat:repeat-x,repeat;
+
         }
         
-        .box1 {
-            grid-column-start: 1;
-            grid-column-end: 7;
-            grid-row-start: 1;
-            grid-row-end: 1;
+        table thead th {
+            background-color: rgb(181, 227, 255)
         }
-        .box2 {
-            grid-column-start: 1;
-            grid-column-end: 4;
-            grid-row-start: 2;
-            grid-row-end: 2;
+        
+        tbody th,
+        tbody td {
+            border-collapse: collapse;
+            padding: 5px;
+            border: 1px lightgray solid;
+            text-align: center;
+            vertical-align: middle;
+            width: 200px;
+            height: 200px;
+
         }
-        .box3 {
-            grid-column-start: 4;
-            grid-column-end: 7;
-            grid-row-start: 2;
-            grid-row-end: 2;
+        
+        tbody tr:nth-child(2) td:nth-child(2) {
+            background-image: url(https://i.imgur.com/FR8QCdJ.gif),url(https://i.imgur.com/wivmnTul.png);
+            background-size: 210px 210px;
         }
+        /* 請在此加入更多 style */
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="box1">1</div>
-        <div class="box2">1</div>
-        <div class="box3">1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-    </div>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">有背景圖的表格</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 
 </html>

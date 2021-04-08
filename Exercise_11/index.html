@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-Hand-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex_test</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            font-size: 3rem;
+        }
+        
+        header {
+            background-color: blanchedalmond;
+        }
+        
+        section {
+            background-color: cadetblue;
+            flex-grow: 3;
+            order: 1;
+        }
+        
+        nav {
+            background-color: blue;
+        }
+        
+        article {
+            background-color: chartreuse;
+            flex-grow: 1;
+            order: 0;
+        }
+        
+        aside {
+            background-color: coral;
+            flex-grow: 1;
+            order: 2;
+        }
+        
+        footer {
+            background-color: brown;
+        }
+        
+        .content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        table {
+            border-collapse: collapse;
+        }
+        
+        table tr td {
+            background-color: wheat;
+            border: 3px black dashed;
+        }
+        
+        table tr:nth-child(1) td {
+            border: 3px black solid;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        MyShop 商品 購物車
+    </header>
+
+    <div class="content">
+        <article>
+        <table>
+            <tr>
+                <td>商品分類</td>
+            </tr>
+            <tr>
+                <td>所有商品</td>
+            </tr>
+            <tr>
+                <td>暢銷商品</td>
+            </tr>
+            <tr>
+                <td>本日精選</td>
+            </tr>
+            <tr>
+                <td>新品上市</td>
+            </tr>
+        </table>
+        </article>
+        <aside>2</aside>
+        <aside>3</aside>
+        <aside>4</aside>
+    </div>
+    <footer>footer</footer>
+</body>
+
+</html>
