@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flex_test</title>
+    <title>Exercise_11</title>
     <style>
-        body {
+            body {
             display: flex;
             flex-direction: column;
             min-height: 100vh;
@@ -30,13 +30,13 @@
         }
         
         article {
-            background-color: chartreuse;
+            background-color: rgb(255, 255, 255);
             flex-grow: 1;
             order: 0;
         }
         
         aside {
-            background-color: coral;
+            background-color: rgb(255, 255, 255);
             flex-grow: 1;
             order: 2;
         }
@@ -53,6 +53,8 @@
         
         table {
             border-collapse: collapse;
+            font-family: cursive;
+            font-size: 30px;
         }
         
         table tr td {
@@ -63,39 +65,102 @@
         table tr:nth-child(1) td {
             border: 3px black solid;
         }
+        
+        .content2 {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 800px;
+            gap: 40px;
+            padding:20px;
+        }
+        .content3 {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: row;
+        }
+        .image{
+            border: 1px rgb(97, 97, 97) solid;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        MyShop 商品 購物車
+        <div class="content">
+            <div>MyShop</div>
+            <div>商品</div>
+            <div>購物車</div>
+        </div>
     </header>
 
     <div class="content">
         <article>
-        <table>
-            <tr>
-                <td>商品分類</td>
-            </tr>
-            <tr>
-                <td>所有商品</td>
-            </tr>
-            <tr>
-                <td>暢銷商品</td>
-            </tr>
-            <tr>
-                <td>本日精選</td>
-            </tr>
-            <tr>
-                <td>新品上市</td>
-            </tr>
-        </table>
+            <div style=padding:20px;>
+                <table align="right">
+                    <tr>
+                        <td>商品分類</td>
+                    </tr>
+                    <tr>
+                        <td>所有商品</td>
+                    </tr>
+                    <tr>
+                        <td>暢銷商品</td>
+                    </tr>
+                    <tr>
+                        <td>本日精選</td>
+                    </tr>
+                    <tr>
+                        <td>新品上市</td>
+                    </tr>
+                </table>
+            </div>
         </article>
-        <aside>2</aside>
-        <aside>3</aside>
-        <aside>4</aside>
+        <aside class="content2">
+            <div class="image">
+                <div><img src="https://i.imgur.com/ZMpETy0b.gif" width="300" height="300"></div>
+                <div class="content3">
+                    <div>蛋糕</div>
+                    <button>加入購物車</button>
+                </div>
+                <div>NT$ 150</div>
+            </div>
+            <div class="image">
+                <div><img src="https://i.imgur.com/ODZ7Zpzb.jpg" width="300" height="300"></div>
+                <div class="content3">
+                    <div>滿滿的點心</div>
+                    <button>加入購物車</button>
+                </div>
+                <div>NT$ 300</div>
+            </div>
+            <div class="image">
+                <div><img src="https://i.imgur.com/qT3MWAbb.jpg" width="300" height="300"></div>
+                <div class="content3">
+                    <div>紅色的</div>
+                    <button>加入購物車</button>
+                </div>
+                <div>NT$ 666</div>
+            </div>
+            <div class="image">
+                <div><img src="https://i.imgur.com/2G16qPab.jpg" width="300" height="300"></div>
+                <div class="content3">
+                    <div>蛋糕</div>
+                    <button>加入購物車</button>
+                </div>
+                <div>NT$ 85</div>
+            </div>
+            <div class="image" >
+                <div><img src="https://i.imgur.com/fziT4jzb.gif" width="300" height="300"></div>
+                <div class="content3">
+                    <div>魔術方塊？</div>
+                    <button>加入購物車</button>
+                </div>
+                <div>NT$ 999</div>
+            </div>
+        </aside>
     </div>
-    <footer>footer</footer>
+    <footer>2021 MyShop All rights reserved.</footer>
 </body>
 
 </html>
