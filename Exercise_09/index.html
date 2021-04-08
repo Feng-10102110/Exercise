@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        caption{
-            background-color:rgba(171, 234, 255, 0.945);
+        table {
+            border-collapse: collapse;
+            text-align: center;
         }
-        thead{
+        
+        caption {
+            background-color: rgba(171, 234, 255, 0.945);
+        }
+        
+        thead {
             background-color: yellow;
         }
-        tfoot{
+        
+        tfoot {
             background-color: yellow;
+        }
+        
+        th {
+            border: solid 2px black;
+        }
+        td{
+            border: solid 1px rgb(177, 177, 177);
         }
     </style>
 </head>
+
 <body>
     <table>
         <caption>資產負債表</caption>
@@ -28,68 +44,71 @@
         </thead>
         <tbody>
             <tr>
-                <td rowspan="4" align="center" style="background-color: yellowgreen;">流動資產</td>
+                <td rowspan="4" align="center" style="background-color: yellowgreen;border-left: solid 2px black;border-bottom: solid 2px black;">流動資產</td>
                 <td>現金</td>
-                <td>399,526</td>
-                <td rowspan="3" align="center" style="background-color: pink;">流動負債</td>
+                <td style="text-align:end;">399,526</td>
+                <td rowspan="3" align="center" style="background-color: pink;border-left: solid 2px black;border-bottom: solid 2px black;">流動負債</td>
                 <td>短期借款</td>
-                <td>1,634,870</td>
+                <td style="border-right: solid 2px black;text-align:end;">1,634,870</td>
             </tr>
             <tr>
                 <td>存貨
                 </td>
-                <td>819,854</td>
+                <td style="text-align:end;">819,854</td>
                 <td></td>
-                <td>1,912,740</td>
+                <td style="border-right: solid 2px black;text-align:end;">1,912,740</td>
             </tr>
             <tr>
                 <td>應收帳款
                 </td>
-                <td>945,494</td>
-                <td>應付帳款</td>
-                <td>277,870</td>
+                <td style="text-align:end;">945,494</td>
+                <td style="border-bottom: solid 2px black;">應付帳款</td>
+                <td style="border-right: solid 2px black;border-bottom: solid 2px black;text-align:end;">277,870</td>
             </tr>
             <tr>
-                <td>
+                <td style="border-bottom: solid 2px black;">
                 </td>
-                <td>2,164,974</td>
-                <td style="background-color: magenta;">非流動負債</td>
-                <td>長期借款</td>
-                <td>69,600</td>
+                <td style="border-bottom: solid 2px black;text-align:end;">2,164,974</td>
+                <td style="background-color: magenta;border-left: solid 2px black;border-left: solid 2px black;border-bottom: solid 2px black;">非流動負債</td>
+                <td style="border-bottom: solid 2px black;">長期借款</td>
+                <td style="border-bottom: solid 2px black;border-right: solid 2px black;text-align:end;">69,600</td>
             </tr>
             <tr>
-                <td rowspan="4" align="center" style="background-color: green;">非流動資產</td>
-                <td rowspan="4" align="center">固定資產</td>
+                <td rowspan="4" align="center" style="background-color: green;border-left: solid 2px black;border-bottom: solid 2px black;">非流動資產</td>
+                <td rowspan="4" align="center" style="border-bottom: solid 2px black;">固定資產</td>
                 <td></td>
-                <td style="background-color: pink;">負債合計</td>
-                <td></td>
-                <td>1,982,340</td>
+                <td style="background-color: pink;border-left: solid 2px black;border-bottom: solid 2px black;">負債合計</td>
+                <td style="border-bottom: solid 2px black;"></td>
+                <td style="border-right: solid 2px black;border-bottom: solid 2px black;text-align:end;">1,982,340</td>
             </tr>
             <tr>
                 <td></td>
-                <td rowspan="2" align="center">股東權益</td>
+                <td rowspan="2" align="center" style="background-color:rgb(0, 173, 0);border-left: solid 2px black;">股東權益</td>
                 <td>股本</td>
-                <td>1,102,186</td>
+                <td style="border-right: solid 2px black;text-align:end;">1,102,186</td>
             </tr>
             <tr>
-                <td>1,361,096</td>
+                <td style="text-align:end;">1,361,096</td>
                 <td>保留盈餘</td>
-                <td>441,544</td>
+                <td style="border-right: solid 2px black;text-align:end;">441,544</td>
             </tr>
             <tr>
-                <td></td>
-                <td>股東權益合計</td>
-                <td></td>
-                <td>1,543,730</td>
+                <td style="border-bottom: solid 2px black;"></td>
+                <td style="background-color:rgb(0, 173, 0);border-left: solid 2px black;border-bottom: solid 2px black;">股東權益合計</td>
+                <td style="border-bottom: solid 2px black;"></td>
+                <td style="border-bottom: solid 2px black;border-right: solid 2px black;text-align:end;">1,543,730</td>
             </tr>
-            <tfoot><tr>
-                <td>資產合計</td>
-                <td></td>
-                <td>3,526,070</td>
-                <td>負債及股東權益</td>
-                <td></td>
-                <td>3,526,070</td>
-            </tr></tfoot>
-            </tbody>
+            <tfoot>
+                <tr>
+                    <td style="border-color: yellow;">資產合計</td>
+                    <td style="border-color: yellow;"></td>
+                    <td style="border-bottom:2px black dashed;border-right: yellow;text-align:end;">3,526,070</td>
+                    <td style="border-color: yellow;">負債及股東權益</td>
+                    <td style="border-color: yellow;"></td>
+                    <td style="border-bottom:2px black dashed;border-right: yellow;text-align:end;">3,526,070</td>
+                </tr>
+            </tfoot>
+        </tbody>
 </body>
+
 </html>
