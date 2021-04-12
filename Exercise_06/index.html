@@ -13,39 +13,53 @@
             min-height: 100vh;
             margin: 0;
             font-size: 3rem;
+            font-family: cursive;
         }
         
         header {
-            background-color: blanchedalmond;
+            background-color: rgb(255, 255, 255);
+            flex-grow: 1;
+            margin: auto;
+            text-align: right;
+        }
+        
+        header>img {
+            border-radius: 50%;
+            height: 400px;
+            width: 400px;
         }
         
         section {
             background-color: cadetblue;
             flex-grow: 1;
-            order: 1;
         }
         
         nav {
-            background-color: blue;
+            background-color: rgb(255, 255, 255);
+            flex-grow: 5;
         }
         
         article {
-            background-color: chartreuse;
+            background-color: rgb(255, 255, 255);
             flex-grow: 1;
-            order: 0;
         }
         
         aside {
             background-color: coral;
             flex-grow: 1;
-            order: 2;
         }
         
         footer {
-            background-color: brown;
+            background-color: rgb(255, 255, 255);
         }
         
         .content {
+            flex-grow: 0.5;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .a {
             flex-grow: 1;
             display: flex;
             flex-direction: row;
@@ -54,14 +68,56 @@
 </head>
 
 <body>
-    <header>個人簡歷</header>
-    <nav>自身經歷與作品集</nav>
     <div class="content">
-        <section>基本資料</section>
-        <article>article</article>
-        <aside>aside</aside>
+        <header>
+            <img src="https://attach.setn.com/newsimages/2021/01/19/2991552-XXL.jpg">
+        </header>
+        <nav>
+            <h1>鄭有味</h1>
+            <h4>在小吃店深耕，越魯越香，為了能夠讓大家都吃得津津有味而努力！</h4>
+        </nav>
     </div>
-    <footer>footer</footer>
+
+    <section>技能</section>
+    <article>
+        <div class="a">
+            <div style="width: 33.3%;">
+                <p>香</p>
+                <h4>總之就是很香
+                    <h4>
+            </div>
+            <div style="width: 33.3%;">
+                <p>辣</p>
+                <h4>讓沒味覺也能吃到味道
+                    <h4>
+            </div>
+            <div style="width: 33.3%;">
+                <p>夠勁</p>
+                <h4>後勁很強，回味無窮
+                    <h4></h4>
+            </div>
+        </div>
+    </article>
+    <aside>工作履歷</aside>
+    <footer>
+        <div class="a">
+            <div style="width: 33.3%;">
+                <p>有味小吃店</p>
+                <h4>先魯了起來，而後因魯到不行而離職。
+                    <h4>
+            </div>
+            <div style="width: 33.3%;">
+                <p>很香餐廳</p>
+                <h4>深耕味道的滋味，香到被大家都無法工作而離職。
+                    <h4>
+            </div>
+            <div style="width: 33.3%;">
+                <p>勁爆大飯店</p>
+                <h4>目前就職於此，持續勁爆中。
+                    <h4></h4>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
